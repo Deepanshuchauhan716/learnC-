@@ -45,7 +45,27 @@ int main(){
     bool Isstudent = true;
     bool Isstudent = false;
 
-    
+    // ########## type modifier ############33
+
+    // positive aur negative dono value
+
+    signed int a;
+
+    // sirf positive value store krta hai
+
+    unsigned int b;
+
+    // short chota integer
+
+    short int x;
+
+    // long bda integer
+
+    long int z;
+
+    // aur bhi bada integer
+
+    long long int y;
 
 
 }
