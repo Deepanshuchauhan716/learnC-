@@ -36,5 +36,20 @@ int main()
 
     int marks = 40;
 
-    
+    // ======= variable naming rule ===========
+
+    // you can start variable name with latter , _ ;
+    // you can not start varibale name with number, - , int float ,keyword
+
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! variable assignment =================
+
+    // kisi phle bne variable ko baad me value assign krna
+
+    int name;
+    name = 10;
+
+    // ek sath bahut saare variable bnana 
+
+    int a = 20, b = 20, c = 40;
+
 }
