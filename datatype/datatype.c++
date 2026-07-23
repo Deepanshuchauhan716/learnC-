@@ -13,4 +13,13 @@ int main(){
     // int ek integer data store krta hai
     // char ek chracter type ka data store krta hiai
     // float decimal type ka data store krta hai
+
+    // ============================================ need of data type ==============================
+
+    // compiler ko pta hona chiaye ki 
+    // konsi value store hogi 
+    // kitni memory chaiye
+    // us value par konse operation valid honge
+
+    
 }
