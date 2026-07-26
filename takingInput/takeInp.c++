@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 int main(){
 
@@ -19,5 +20,29 @@ int main(){
 
     cout<<age;
 
-    return 0;
+    //  multiple input together
+
+    int a ,b;
+    cin >> a >> b;
+
+    // different data type ka input
+
+    int age;
+    cin >> age;
+
+    float salary;
+    cin>>salary;
+
+    double pi;
+    cin >> pi;
+
+    char grade;
+    cin >> grade;
+
+    // ##################### getline() ####################33
+
+    // agar puri line leni ho input (space ke saath) to getline() use kro
+
+    string name;
+    getline(cin,name);
 }
