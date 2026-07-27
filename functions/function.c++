@@ -104,5 +104,28 @@ int main(){
     // functionName() 
     // functionName() 
 
+    // * * * * * * * * * * * * * PARAMETER AND ARGUMENT  * * * * * * * * * //
 
+    // socho tum ek pizza order kr rhe ho aur tumne kha ki medium pizza to ye information tumhara ek argument hai
+
+    // pizza(size) 
+    // yaha size ek parameter hai
+
+    // parameter = function ke andr bna hua placeholder
+
+    // ** Parameter ** // 
+    // function declaration me jo variable likhe jaate hai unhe parameter khte hai
+
+    // void add(int a,int b)
+    // * yaha a aur b parameter hai
+
+    // ** argument ** //
+
+    // jab function ko call krte hai aur actual values bhjete hai unhe argument khte hai
+
+    // add(10,12) yaha 10 aur 12 arguments hai
+
+    // ***************** return ******************//
+
+    
 }
