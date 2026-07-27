@@ -33,9 +33,13 @@ using namespace std;
 int add(int a,int b){
     return a + b;
 }
+
+int sub(int a,int b){
+        return a - b;
+    }
+
 int main(){
-    cout << add(12,12);// ab jitni baar chao add function use kr skte hai
-}
+    cout << add(12,12) << endl;// ab jitni baar chao add function use kr skte hai
 
 // * function ko call kaise krte hai * //
 //  * jis function ko call krna hai uska naam aur paranthses like add() 
@@ -58,3 +62,47 @@ int main(){
 // **** c++ mai function ke andr function nhi bna skte hai
 
 
+//  ********* Function declaration & definition & calling ************************//
+
+// function banane ke 3 step hote hai
+
+// * 1 =>declaration
+
+    // ~ function declaration compiler ko bta deta hai ki 
+    // * function ka naam kya hai
+    // * return type kya hai
+    // * kitne parameter hai
+    // * parameter ke data type kya hai
+
+    // * lekin declaration me function ka code nhi hota hai
+    // *example
+
+    cout << sub(12,10);
+    // int add(int a,int b) // declaration
+
+   //* 2 =>definition
+
+   //DEFINITION ME FUNCTION KA ACTUAL CODE LIKHA JAATA HAI
+    // yahi function ki asli body hoti hai
+
+    // **example***//
+
+    // int sub(int a,int b){ //DECLARATION but main file ke andr function nhi bnta isliye upper bnaaya 
+    //     return a - b;
+    // } 
+
+    //* 3 => function calling
+
+    // function ko execute ke process ko function calling khte hai
+
+    // **** syntax ***
+
+    // functionName()  ese hi function ko call kiya jaata hai taaki uske andr ka code execute ho skte
+    // multiple calls bhi kr skte hai
+    // functionName() 
+    // functionName() 
+    // functionName() 
+    // functionName() 
+
+
+}
