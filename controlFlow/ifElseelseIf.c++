@@ -95,5 +95,6 @@ int main(){
     } 
 
     // esi condition ke liye use hota hai else if
+
     
 }
