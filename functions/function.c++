@@ -127,5 +127,20 @@ int main(){
 
     // ***************** return ******************//
 
+    // return ek keyword hai jo function se value wapas krta hai aur function ko execution wahi khtm kr deta hai
+
+    // function apna result return krke caller ko de deta hai
+
+    //  ** Syntax ** // 
+
+    // return value 
+    // return 10
+    // return a + b
+    // return a - b // kuch bhi result return kra skte hai
+
+    // jaise hi return hoga function immidialtly bnd ho jaayega
+
     
+
+
 }
