@@ -23,7 +23,7 @@ int main(){
     int age = 20;
 
     if(age >= 10){
-        cout<<"Bigger than 10";
+        cout<<"Bigger than 10\n";
     }
 
     // agar condition false hui to kuch bhi print nhi hoga
@@ -39,5 +39,61 @@ int main(){
     // if(-10) true
     // if(0) false
 
+    // ********* Else statement ***************
+
+    // * ab do possiblities hai
+    // agar if ki condition false hui to konsa code chlega
+
+    // if(condition){
+    //     true
+    // }else{
+    //     flase
+    // }
+
+    // *example 
+
+    int age3 = 16;
+
+    if(age3 >= 18){
+        cout << "Adult";
+    }else{
+        cout<< "Minor";
+    } // agar if ki condition false hui to else ka code execute hoga
+
+    // ********* Else if ***************
+
+    // jab 2 se jaada condition check krni ho tab else if ka use hota hai
+
+    // if(condition){
+    //     code
+    // }
+    // else if(condition){
+    //     code
+    // }
+    // else if(condition){
+    //     code
+    // }
+    // else{
+
+    // }
+
+    // *** Example ****
+
+    int marks = 82;
+
+    if(marks >= 90){
+        cout << "A";
+    }
+    else if(marks >= 75){
+        cout << "B";
+    }
+    else if(marks >= 50){
+        cout << "C";
+    }
+    else{
+        cout<<"fail";
+    } 
+
+    // esi condition ke liye use hota hai else if
     
 }
