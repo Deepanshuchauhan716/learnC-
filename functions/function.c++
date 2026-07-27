@@ -140,7 +140,41 @@ int main(){
 
     // jaise hi return hoga function immidialtly bnd ho jaayega
 
-    
+    // !!!!!!!!!!!!!!!  call by value and call by refrence !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    // jab hum function ko argument dete hai to data pass krne ke do treeke hote hai
+
+    // 1 call by value
+    // call by value me original variable ki copy function ko di jaati hai function us copy par kaam krta hai original variable par nhi
+
+    // example 
+
+    // void change(int x) {
+    //     x = 100;
+    // }
+
+    // int main(){
+    //     int a = 10;
+    //     change(a);
+         
+    //     cout << a;
+    // }
+
+
+    // 2 call by refrence
+
+    // function ko original variable ka refrence milta hai
+
+    // isliye function me jo change hoga original me bhi hoga
+
+    // refrence banane ke liye & ka use krte hai
+
+
+    // void change(int &x) 
+
+
+    // kab kya use kre
+
 
 
 }
