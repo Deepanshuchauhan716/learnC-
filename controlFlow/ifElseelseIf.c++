@@ -85,7 +85,7 @@ int main(){
         cout << "A";
     }
     else if(marks >= 75){
-        cout << "B";
+        cout << "B\n";
     }
     else if(marks >= 50){
         cout << "C";
@@ -96,5 +96,20 @@ int main(){
 
     // esi condition ke liye use hota hai else if
 
+    // ****** ********** ********** ********* NESTED IF **** ********* ********** ********* ******** 
+
+    // ek if ke andr dusra if
+
+    int id = 1234;
+    bool isStudent = true;
+
+    if(id == 1234){
+
+        if(isStudent){
+            cout << "Entry";
+        }
+    }
+
+    // ise khte hai nested if matalb ek condition ke andr dusri condition
     
 }
