@@ -175,6 +175,4 @@ int main(){
 
     // kab kya use kre
 
-
-
 }
