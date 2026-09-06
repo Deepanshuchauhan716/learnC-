@@ -38,6 +38,9 @@ int sub(int a,int b){
         return a - b;
     }
 
+int change(int x){
+     x = 20;
+}
 int main(){
     cout << add(12,12) << endl;// ab jitni baar chao add function use kr skte hai
 
@@ -142,37 +145,14 @@ int main(){
 
     // !!!!!!!!!!!!!!!  call by value and call by refrence !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    // jab hum function ko argument dete hai to data pass krne ke do treeke hote hai
+    // call by value
 
-    // 1 call by value
-    // call by value me original variable ki copy function ko di jaati hai function us copy par kaam krta hai original variable par nhi
+    // Call by Value mein function ko variable ki copy milti hai.
+    // Isliye function ke andar value change karne par original variable change nahi hota.
 
-    // example 
+    int a = 10;
+    change(a);
 
-    // void change(int x) {
-    //     x = 100;
-    // }
-
-    // int main(){
-    //     int a = 10;
-    //     change(a);
-         
-    //     cout << a;
-    // }
-
-
-    // 2 call by refrence
-
-    // function ko original variable ka refrence milta hai
-
-    // isliye function me jo change hoga original me bhi hoga
-
-    // refrence banane ke liye & ka use krte hai
-
-
-    // void change(int &x) 
-
-
-    // kab kya use kre
+    cout<<a;
 
 }
