@@ -74,3 +74,91 @@
 // }
 
 // COMPLETE ✅
+
+// 4 => CHECK NUMBER IS ODD OR EVEN
+
+// #include <iostream>
+// using namespace std;
+
+// void checkEvenOdd(int num1){
+
+//     if(num1 % 2 == 0){
+//         cout << num1 << " is even";
+//     }else{
+//         cout << num1 << " is odd";
+//     }
+// }
+
+// int main() {
+
+//     int num1;
+//         cout<<"Enter first number : ";
+//         cin>>num1;
+
+//         checkEvenOdd(num1);
+//     return 0;
+// }
+
+// COMPLETE ✅
+
+// 5 => PRINT THE SUM OF FIRST N NATURAL NUMBER
+
+// #include <iostream>
+// using namespace std;
+
+// void PrintSum(int inp){
+
+//     int sum = 0;
+//     for(int i = inp; i >= 1 ; i--){
+//         sum = sum + i;
+//     }
+//     cout<< sum;
+// }
+
+// int main() {
+    
+//     int inp;
+//     cout<<"Enter a number : ";
+//     cin>>inp;
+
+//     PrintSum(inp);
+//     return 0;
+// }
+
+// COMPLETE ✅
+
+// 6 => FIND THE FACTORIAL OF A NUMBER
+
+// #include <iostream>
+// using namespace std;
+
+// void factorial(int inp){
+//     int fact = 1;
+
+//     for(int i = inp; i >= 1; i--){
+//         fact = fact * i;
+//     }
+
+//     cout<<fact;
+// }
+
+// int main() {
+
+//     int inp;
+//     cout<<"Enter a number : ";
+//     cin>>inp;
+
+//     factorial(inp);
+//     return 0;
+// }
+
+// COMPLETE ✅
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    return 0;
+}
