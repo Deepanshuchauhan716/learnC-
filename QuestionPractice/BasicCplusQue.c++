@@ -154,11 +154,27 @@
 
 // COMPLETE ✅
 
+// 7 => CONVERT TEMPREATURE FROM CELCIUS TO FAHRENHEIT
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
+// void convertFahrenheit(int celcius){
+//     int result;
+
+//     result = (celcius * 9 / 5) + 32;
+//     cout<<result;
+// }
+
+// int main() {
     
-    return 0;
-}
+//     int celcius;
+//     cout << "Enter celcius : ";
+//     cin>>celcius;
+
+//     convertFahrenheit(celcius);
+//     return 0;
+// }
+
+// COMPLETE ✅
+
