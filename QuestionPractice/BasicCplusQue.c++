@@ -178,3 +178,58 @@
 
 // COMPLETE ✅
 
+// 8 => CHECK NUMBER IS POSITIVE OR NAGETIVE OR ZERO
+
+// #include <iostream>
+// using namespace std;
+
+// void CheckNumber(int num){
+//     if(num > 0){
+//         cout<<"Number is positive";
+//     }
+//     else if(num < 0){
+//         cout<<"Number is nagetive";
+//     }
+//     else{
+//         cout<<"Number is zero";
+//     }
+// }
+
+// int main() {
+    
+//     int num;
+//     cout<<"Enter number : ";
+//     cin>>num;
+
+//     CheckNumber(num);
+//     return 0;
+
+// }
+
+// COMPLETE ✅
+
+// CHECK A NUMBER IS DIVISIBLE BY 5 AND 11
+
+// #include <iostream>
+// using namespace std;
+
+// int check(int num){
+//     if(num % 5 == 0 || num % 11 == 0){
+//         cout<<"Number is divisible by 5 and 11";
+//     }
+//     else{
+//         cout<<"Nothing";
+//     }
+// }
+// int main() {
+    
+//     int num;
+//     cout<<"Enter a number : ";
+//     cin>>num;
+
+//     check(num);
+//     return 0;
+// }
+
+// COMPLETE ✅
+
