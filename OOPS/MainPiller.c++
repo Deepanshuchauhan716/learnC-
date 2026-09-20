@@ -54,25 +54,25 @@
 
 //         Child class parent ki existing cheezein reuse kar sakti hai.
 
-#include <iostream>
-#include<string>
-using namespace std;
+// #include <iostream>
+// #include<string>
+// using namespace std;
 
-class Student{
+// class Student{
      
-    public:
-    string name;
-    int age;
+//     public:
+//     string name;
+//     int age;
 
-    void study(){
-        cout<<"Student studying";
-    }
-};
+//     void study(){
+//         cout<<"Student studying";
+//     }
+// };
 
-class CollegeStudent : public Student{
-    public:
-    string college;
-};
+// class CollegeStudent : public Student{
+//     public:
+//     string college;
+// };
 
 // Yahan:
 
@@ -101,15 +101,99 @@ class CollegeStudent : public Student{
 // Agar multiple classes me common cheezein hain, to unhe baar-baar likhne ke bajay ek parent class me rakh sakte ho.
 
 
-    int main()
-{
+// int main()
+// {
 
-    CollegeStudent c1;
+//     CollegeStudent c1;
 
-    c1.name = "Deepanshu"; // Student class se mila
-    c1.age = 12;           // Student class se mila
-    c1.study();            // Student class se mila
+//     c1.name = "Deepanshu"; // Student class se mila
+//     c1.age = 12;           // Student class se mila
+//     c1.study();            // Student class se mila
 
-    c1.college = "Saitm"; // Collegestudent ka apna
+//     c1.college = "Saitm"; // Collegestudent ka apna
+//     return 0;
+// }
+
+// Polymorphism ka simple meaning ---------------------------------------------------------
+
+//     Poly = Many
+//         Morphism = Forms
+
+//Matlab :
+
+//Ek hi cheez ka different situations me different behaviour hona.
+
+// Real-world example: Play button
+
+// Maan lo tumhare phone me ek Play button hai.
+
+// Tum:
+
+// Music play karo → 🎵 song chalega
+// Video play karo → 🎬 video chalega
+// Game play karo → 🎮 game start hoga
+
+// Button ka naam/action basically Play hi hai, lekin result/behaviour context ke according different hai.
+
+//              PLAY
+//                │
+//        ┌───────┼────────┐
+//        ↓       ↓        ↓
+//      Music    Video    Game
+//        ↓       ↓        ↓
+//      Song     Video    Game starts
+
+// Ye idea programming me polymorphism hai.
+
+
+// C++ me kaise?
+
+// Maan lo hamare paas different animals hain.
+
+// Sabke paas ek common action hai:
+
+// sound()
+
+// Lekin har animal ka sound alag hai.
+
+// Animal
+//    │
+//    ├── Dog    → sound() → Bark
+//    ├── Cat    → sound() → Meow
+//    └── Cow    → sound() → Moo
+
+#include <iostream>
+using namespace std;
+
+class Animal{
+    public:
+    virtual void Sound(){
+        cout << "Animal makes sound";
+    }
+};
+
+class dog : public Animal{
+    public:
+    void Sound() override   {
+        cout<< "Dog barks"<<endl;
+    }
+};
+
+class cat : public Animal{
+    public:
+    void Sound() override   {
+        cout<< "cat meow"<<endl;
+    }
+};
+
+int main() {
+
+    dog d;
+    cat c;
+
+    d.Sound();
+    c.Sound();
+
+    
     return 0;
 }
