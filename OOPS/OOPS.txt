@@ -1,8 +1,8 @@
 OOP basic to advanced
 
-1. Class & Object
+1. Class & Object // ✅
        ↓
-2. Access Specifiers
+2. Access Specifiers // ✅
        ↓
 3. Encapsulation
        ↓
