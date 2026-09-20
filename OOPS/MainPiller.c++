@@ -1,4 +1,4 @@
-// 1. Encapsulation
+// 1. Encapsulation ---------------------------------------------------------
 //         Simple meaning :
 
 //     Data aur us data par kaam karne wale functions ko ek class ke andar rakhna +
@@ -41,3 +41,75 @@
 //     s1.ShowPin();
 //     return 0;
 // }
+
+// Inheritance kya hai ? Simple meaning --------------------------------
+
+//Inheritance ka matlab hai ek class ka doosri class ki properties aur functions ko inherit /
+//use karna.
+
+// yahan 2 classes hoti hain :
+
+//     Parent Class
+//      ↓ Child Class
+
+//         Child class parent ki existing cheezein reuse kar sakti hai.
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+class Student{
+     
+    public:
+    string name;
+    int age;
+
+    void study(){
+        cout<<"Student studying";
+    }
+};
+
+class CollegeStudent : public Student{
+    public:
+    string college;
+};
+
+// Yahan:
+
+// Student
+//    ↓
+// CollegeStudent
+
+// CollegeStudent ne Student se inheritance li.
+
+// Student
+//  ├── name
+//  ├── age
+//  └── study()
+//        ↓
+//        ↓ inheritance
+//        ↓ CollegeStudent
+//  ├── name       ← inherited
+//  ├── age        ← inherited
+//  ├── study()    ← inherited
+//  └── college    ← own
+
+// To inheritance ki zarurat KYO hai?
+
+// Code reuse ke liye.
+
+// Agar multiple classes me common cheezein hain, to unhe baar-baar likhne ke bajay ek parent class me rakh sakte ho.
+
+
+    int main()
+{
+
+    CollegeStudent c1;
+
+    c1.name = "Deepanshu"; // Student class se mila
+    c1.age = 12;           // Student class se mila
+    c1.study();            // Student class se mila
+
+    c1.college = "Saitm"; // Collegestudent ka apna
+    return 0;
+}
