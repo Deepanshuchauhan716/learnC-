@@ -10,7 +10,7 @@ OOP basic to advanced
        ↓
 5. Destructor //✅
        ↓
-6. this Pointer 
+6. this Pointer //✅
        ↓
 7. Static Members
        ↓
@@ -34,7 +34,7 @@ OOP basic to advanced
        ↓
 17. Pure Virtual Function
        ↓
-18. Friend Function / Friend Class
+18. Friend Function / Friend Class //✅
        ↓
 19. Object Pointer
        ↓
