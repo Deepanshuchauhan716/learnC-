@@ -76,3 +76,51 @@ int main() {
 //   ↓ Destructor automatically call
 //   ↓ "Customer left, table available again"
 //   ↓ "Next customer can use the table."
+
+
+// This pointer ------------------------------------------------------------------------ 
+
+// this pointer kya hota hai?
+
+// this pointer current object ka address/reference rakhta hai.
+
+// this = "jis object ne ye function call kiya hai, us object ko refer karo."
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+class Student{
+    public:
+        string name;
+
+        void PrintName(string name){
+            this->name = name;
+        }
+
+        void showData(){
+            cout<<this->name;
+        }
+        // agr tum main file me 
+        //Student s1;
+        //s1.setName("Deepanshu"); ese likhte ho Parameter bhi name hai aur member ka name bhi name hai
+        //is case me use krte hai (this) ka 
+
+        //this ka matlb hai current object yaani S1 to this->name ka mtlb hua S1.name = name 
+        //use maanlo tumhare pass 100 object hai tumhe ek function use krke har object ke andr value daalni hai to use kr skte ho this ka s1.name krne ke jgh hum this ka use krenge
+};
+int main() {
+    
+    Student s1;
+    Student s2;
+    Student s3;
+
+    s1.PrintName("Deepanshu");
+    s2.PrintName("Mohit");
+    s3.PrintName("Rahul");
+
+    s1.showData();
+    s2.showData();
+
+    return 0;
+}
