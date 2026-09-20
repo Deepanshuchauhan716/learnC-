@@ -4,7 +4,7 @@ OOP basic to advanced
        ↓
 2. Access Specifiers // ✅
        ↓
-3. Encapsulation
+3. Encapsulation // ✅
        ↓
 4. Constructor
        ↓
@@ -14,9 +14,9 @@ OOP basic to advanced
        ↓
 7. Static Members
        ↓
-8. Inheritance
+8. Inheritance // ✅
        ↓
-9. Polymorphism
+9. Polymorphism // ✅
        ↓
 10. Function Overloading
        ↓
@@ -28,7 +28,7 @@ OOP basic to advanced
        ↓
 14. Runtime Polymorphism
        ↓
-15. Abstraction
+15. Abstraction // ✅
        ↓
 16. Abstract Class
        ↓
