@@ -569,3 +569,84 @@
 //     s1.showname();
 //     return 0;
 // }
+
+// 21. Create an Animal class with a sound() function. Create a Dog class that gives different
+// behavior for sound().
+
+// #include <iostream>
+// using namespace std;
+
+// class Animal{
+
+//     public:
+//     void sound(){
+
+//     }
+// };
+
+// class dog : public Animal{
+// public:
+//     void sound()
+//     {
+//         cout<<"Bhow Bhow"<<endl;
+//     }
+// };
+
+// class cat : public Animal{
+// public:
+//     void sound()
+//     {
+//         cout << "meow meow"<<endl;
+//     }
+// };
+
+// int main() {
+    
+//     dog d1;
+//     d1.sound();
+//     cat c1;
+//     c1.sound();
+//     return 0;
+// }
+
+// 24. Create:
+// Vehicle
+// ├── Car
+// └── Bike
+// Give both classes a start() function with different behavior.
+
+// #include <iostream>
+// using namespace std;
+
+// class Vehicle{
+//     protected:
+//     void Start(){
+//         cout<<"Car started"<<endl;
+//     }
+// };
+
+// class Car: public Vehicle{
+
+//     public:
+//     void Start(){
+//         cout<<"Start through key"<<endl;
+//     }
+// };
+// class Bike: public Vehicle{
+//     public:
+//     void Start()
+//     {
+//         cout << "Start through kick" << endl;
+//     }
+// };
+
+
+// int main() {
+
+//     Car c1;
+//     c1.Start();
+//     Bike b1;
+//     b1.Start();
+//     return 0;
+// }
+
