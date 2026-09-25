@@ -168,3 +168,163 @@
 
 //     return 0;
 // }
+
+// ✅ complete
+
+// 6. Create a Student class where name and marks are private. Use a public function to set
+// and display them.
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class Student {
+//     private:
+//       string name;
+//       float marks;
+
+//     public:
+//         void showInfo(string n,float m){
+//             name = n;
+//             marks = m;
+//         }
+
+//         void ShowInfo(){
+//             cout<<"Name : "<<name<<endl;
+//             cout<<"Marks : "<<marks<<endl;
+//         }
+
+// };
+// int main() {
+    
+//     Student s1;
+//     s1.showInfo("Deepanshu",45.56);
+//     s1.ShowInfo();
+//     return 0;
+// }
+
+// ✅ complete
+
+// 7. Create a Student class with private marks.Write a setter that accepts marks only between 0 and 100.
+
+// #include <iostream>
+// using namespace std;
+
+// class Student{
+    
+//     private:
+//         int marks;
+
+//     public:
+//     void ShowData(int m){
+        
+//         if(m <= 100 && m >= 0){
+//             marks = m;
+           
+//         }else{
+//             cout<<"Enter marks between 0 to 100"<<endl;
+//         }
+//     }
+
+//     void ShowData(){
+//          cout<<"Marks : "<<marks;
+//     }
+
+// };
+
+// int main() {
+    
+//     Student s1;
+//     s1.ShowData(-20);
+//     return 0;
+// }
+
+// ✅ complete
+
+// 8. Create a Student class with a parameterized constructor that initializes name, age, and marks.
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class Student{
+//     public:
+//         string name;
+//         int age;
+//         int marks;
+
+//     Student(string name,int age,int marks){
+//         this->name = name;
+//         this->age = age;
+//         this->marks = marks;
+//     }
+// };
+
+// int main() {
+
+//     Student s1("Deepanshu",45,687);
+//     return 0;
+// }
+
+// ✅ complete
+
+
+// 9. Create an Employee class with a constructor that initializes:
+// name
+// salary
+// department
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class Employee{
+
+//     public:
+//         string name;
+//         float salary;
+//         string dept;
+
+//     Employee(string name,float salary,string dept){
+//         this->name = name;
+//         this->salary = salary;
+//         this->dept = dept;
+//     }
+    
+//     void show(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"salary : "<<salary<<endl;
+//         cout<<"dept : "<<dept<<endl;
+//     }
+// };
+
+// int main() {
+    
+//     Employee e1("Rahul",4535.56,"IT");
+//     e1.show();
+//     return 0;
+// }
+
+// ✅ complete
+
+// 10. Create a class having a constructor that prints:
+// Object Created
+// Create 2 objects and observe how many times the constructor runs.
+
+// #include <iostream>
+// using namespace std;
+
+// class Constructer{
+
+//     public:
+//     Constructer(){
+//         cout<<"Object created"<<endl;
+//     }
+// };
+
+// int main() {
+    
+//     Constructer C1;
+//     Constructer C2;
+//     return 0;
+// }
