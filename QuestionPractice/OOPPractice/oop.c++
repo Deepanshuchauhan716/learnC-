@@ -504,3 +504,68 @@
 // }
 
 // ✅ complete
+
+// 18. Create a Person class containing name and age.Inherit a Student class from Person.
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class Person{
+//     public:
+//      string name;
+//      int age;
+
+//      void setData(string name,int age){
+//         this->name = name;
+//         this->age = age;
+//      }
+
+// };
+
+// class Student: public Person{
+//     public:
+//     void showdata()
+//     {
+//         cout << "Name : " << name << endl;
+//         cout << "age : " << age << endl;
+//     }
+// };
+
+// int main() {
+    
+//     Student s1;
+//     s1.name = "Deepanshu";
+//     s1.age  = 23;
+
+//     s1.showdata();
+//     return 0;
+// }
+
+// ✅ complete
+
+// 19. Create a parent class Person with a showName() function. Inherit Student and call the
+// inherited function from the Student object.
+
+// #include <iostream>
+// using namespace std;
+// class person{
+
+//     public:
+//     string name;
+    
+//     void showname(){
+//         cout<<name;
+//     }
+// };
+
+// class Student : public person{
+
+// };
+// int main() {
+    
+//     Student s1;
+//     s1.name = "Anu";
+//     s1.showname();
+//     return 0;
+// }
