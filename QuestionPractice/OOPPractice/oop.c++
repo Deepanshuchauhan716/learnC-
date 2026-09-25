@@ -328,3 +328,179 @@
 //     Constructer C2;
 //     return 0;
 // }
+
+// ✅ complete
+
+// 11. Create a class with a destructor that prints:
+// Object Destroyed
+// Create an object and observe when the destructor runs.
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class destructer{
+
+//     public:
+//     destructer(){
+//         cout<<"Object created"<<endl;
+//     }
+//     ~destructer(){
+//         cout<<"Object destroyed"<<endl;
+//     }
+// };
+
+
+// int main() {
+    
+//     destructer d1;
+//     return 0;
+// }
+
+// ✅ complete
+
+// 12. Use { } scope to demonstrate when a destructor is automatically called.
+
+// #include <iostream>
+// using namespace std;
+// #include<string>
+
+// class Scope{
+
+//     public:
+
+//     Scope(){
+//         cout<<"Object created"<<endl;
+//     }
+
+//     ~Scope(){
+//         cout<<"Object destroy"<<endl;
+//     }
+// };
+
+// int main() {
+//     {
+//         Scope s1;
+
+//         cout<<"File open"<<endl;
+
+//         cout << "Edit file" << endl;
+
+//         cout << "Convert into pdf" << endl;
+
+//         cout << "File close" << endl;
+//     }
+//     return 0;
+// }
+
+// ✅ complete
+
+// 13. Create a Student class where the constructor uses:
+// this->name = name;
+// this->age = age;
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class Student{
+//     public:
+//        string name;
+//        int age;
+
+//     Student(string name,int age){
+//         this->name = name;
+//         this->age = age;
+//     }
+
+//     void show(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"age : "<<age<<endl;
+//     }
+
+// };
+
+// int main() {
+    
+//     Student s1("Deepanshu",20);
+//     s1.show();
+//     return 0;
+// }
+
+// ✅ complete
+
+// 14. Create two Student objects and call the same setName() function for both. Understand
+// how this refers to the current object.
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class Student{
+
+//     public:
+//         string name;
+//         int age;
+//         int marks;
+
+//         void setData(string name,int age,int marks){
+//             this->name = name;
+//             this->age = age;
+//             this->marks = marks;
+//         }
+
+//         void PrintData(){
+//             cout<<"Name : "<<name<<endl;
+//             cout<<"age : "<<age<<endl;
+//             cout<<"marks : "<<marks<<endl;
+//         }
+// };
+
+// int main() {
+    
+//     Student s1;
+//     Student s2;
+
+//     s1.setData("Deepanshu",20,456);
+//     s2.setData("Mohit",40,343);
+    
+//     s1.PrintData();
+//     s2.PrintData();
+
+//     return 0;
+// }
+
+// ✅ complete
+
+// 15. Create a Student class with:
+// static int totalStudents;
+// Increase totalStudents whenever a new object is created.
+
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// class Student{
+//     public:
+//     string name;
+//     int static TotalObject;
+
+//     Student(string name){
+//         this->name = name;
+//         TotalObject++;
+//     }
+// };
+
+// int Student::TotalObject = 0;
+
+// int main() {
+    
+//     Student s1("Deepanshu");
+//     Student s2("Rahul");
+//     Student s3("Mohit");
+
+//     cout<<Student::TotalObject;
+//     return 0;
+// }
+
+// ✅ complete
