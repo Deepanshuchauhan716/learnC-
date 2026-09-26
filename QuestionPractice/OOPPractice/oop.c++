@@ -570,6 +570,8 @@
 //     return 0;
 // }
 
+// ✅ complete
+
 // 21. Create an Animal class with a sound() function. Create a Dog class that gives different
 // behavior for sound().
 
@@ -609,7 +611,9 @@
 //     return 0;
 // }
 
-// 24. Create:
+// ✅ complete
+
+// 22. Create:
 // Vehicle
 // ├── Car
 // └── Bike
@@ -649,4 +653,41 @@
 //     b1.Start();
 //     return 0;
 // }
+
+// ✅ complete
+
+// 25. Create a Payment class and child classes such as UPI and Card. Use the same function
+// name pay() with different behavior.
+
+// #include <iostream>
+// using namespace std;
+
+// class payment{
+// };
+
+// class upi : public payment{
+//     public:
+//     void payment(){
+//         cout<<"Payment through upi";
+//     }
+// };
+
+// class phonepay : public payment{
+// public:
+//     void payment()
+//     {
+//         cout << "Payment through phonepay";
+//     }
+// };
+
+// int main() {
+    
+//     upi u1;
+//     u1.payment();
+//     phonepay p1;
+//     p1.payment();
+//     return 0;
+// }
+
+// ✅ complete
 
