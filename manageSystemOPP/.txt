@@ -1,0 +1,7 @@
+main()
+ ├── addStudent()
+ ├── displayStudents()
+ ├── searchStudent()
+ ├── updateStudent()
+ ├── deleteStudent()
+ └── payFee()
