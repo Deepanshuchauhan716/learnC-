@@ -12,7 +12,7 @@ OOP basic to advanced
        ↓
 6. this Pointer //✅
        ↓
-7. Static Members
+7. Static Members //✅
        ↓
 8. Inheritance // ✅
        ↓
