@@ -75,6 +75,23 @@ public:
             cout << "Rs " << amount << " Withdrawn Successfully!" << endl;
         }
     }
+
+    void transfer(Account *receive, int amount)
+    {
+
+        if (balance >= amount && (balance - amount) >= 1000)
+        {
+            balance = balance - amount;
+
+            receive->deposit(amount);
+            cout << "Rs " << amount << " Transfer Successful!" << endl;
+        }
+        else
+        {
+            cout << "Transfer Failed! Insufficient Balance." << endl;
+        }
+    }
+
     int getBalance()
     {
         return balance;
@@ -142,6 +159,7 @@ int main()
         cout << "3.DEPOSIT MONEY" << endl;
         cout << "4.WITHDRAW MONEY" << endl;
         cout << "5.DISPLAY ALL ACCOUNT" << endl;
+        cout << "6.TRANSFER MONEY OTHER ACCOUNT" << endl;
         cout << "====================" << endl;
 
         cout << "Enter your choice : ";
@@ -316,31 +334,95 @@ int main()
 
         case 5:
         {
-            if(count == 0){
-                cout<<"No account created yet"<<endl;
+            if (count == 0)
+            {
+                cout << "No account created yet" << endl;
             }
-            else{
+            else
+            {
                 string SuperKey = "admin1234";
                 string EnteredKey;
 
-                cout<<"Enter Super Key : ";
-                cin>>EnteredKey;
+                cout << "Enter Super Key : ";
+                cin >> EnteredKey;
 
-                if(SuperKey == EnteredKey){
+                if (SuperKey == EnteredKey)
+                {
 
-                    cout << "Manager Login SuccessFully"<<endl;
-                    cout<<endl;
+                    cout << "Manager Login SuccessFully" << endl;
+                    cout << endl;
 
-                    cout<<"==== All Account ===="<<endl;
+                    cout << "==== All Account ====" << endl;
 
-                    for(int i = 0; i < count; i++){
+                    for (int i = 0; i < count; i++)
+                    {
                         accounts[i]->display();
-                        cout<<endl;
+                        cout << endl;
                     }
-                }else{
+                }
+                else
+                {
                     cout << "Access Denied! Incorrect Secret Key." << endl;
                 }
+            }
+            break;
+        }
 
+        case 6:
+        {
+            if (count < 2)
+            {
+                cout << "For tranfer minimum account need 2" << endl;
+            }
+            else
+            {
+                int senderAcc, recevierAcc;
+                double amount;
+                Account *Sendptr = nullptr;
+                Account *Receiver = nullptr;
+
+                cout << "----Transfer Money-----" << endl;
+                cout << "Enter account number (SENDER) : ";
+                cin >> senderAcc;
+                cout << "Enter account number (RECEVIER) : ";
+                cin >> recevierAcc;
+
+                if (senderAcc == recevierAcc)
+                {
+                    cout << "Same account number (Not valid)" << endl;
+                    break;
+                }
+
+                // sender
+                for (int i = 0; i < count; i++)
+                {
+                    if (accounts[i]->getAccNumber() == senderAcc)
+                    {
+                        Sendptr = accounts[i];
+                        break;
+                    }
+                }
+
+                // receiver
+                for (int i = 0; i < count; i++)
+                {
+                    if (accounts[i]->getAccNumber() == recevierAcc)
+                    {
+                        Receiver = accounts[i];
+                        break;
+                    }
+                }
+
+                if (Sendptr != nullptr && Receiver != nullptr)
+                {
+                    cout << "Enter Amount : ";
+                    cin >> amount;
+
+                    Sendptr->transfer(Receiver, amount);
+                }
+                else {
+                    cout << "No account found !" << endl;
+                }
             }
             break;
         }
