@@ -36,6 +36,10 @@ public:
         cout << "Aadhar number : " << aadharnumber << endl;
         cout << "Balance : " << balance << endl;
     }
+
+    int getAccNumber(){
+        return accountnumber;
+    }
 };
 
 int Account::nextaccountnumber = 1001;
@@ -105,49 +109,80 @@ int main()
         cout << "Enter your choice : ";
         cin >> choice;
 
-        if (choice == 1)
-        {
-            string name, addr, type;
-            long int phone, aadhar;
-            double bal = 0, extra;
+        switch(choice){
 
-            cout << "-----------------------" << endl;
-            cout << "----Enter Details----" << endl;
-            cout << "Enter your name : ";
-            cin >> name;
-            cout << "Enter your Address : ";
-            cin >> addr;
-            cout << "Enter you phone Number : ";
-            cin >> phone;
-            cout << "Enter your aadhar Number : ";
-            cin >> aadhar;
-            cout << "Enter balance : ";
-            cin >> bal;
-            cout << "Enter Bank Account Type(savings/current) : ";
-            cin >> type;
 
-            if (type == "savings")
+            case 1:
             {
+                string name, addr, type;
+                long int phone, aadhar;
+                double bal = 0, extra;
 
-                cout << "Enter Interest Rate : ";
-                cin >> extra;
+                cout << "-----------------------" << endl;
+                cout << "----Enter Details----" << endl;
+                cout << "Enter your name : ";
+                cin >> name;
+                cout << "Enter your Address : ";
+                cin >> addr;
+                cout << "Enter you phone Number : ";
+                cin >> phone;
+                cout << "Enter your aadhar Number : ";
+                cin >> aadhar;
+                cout << "Enter balance : ";
+                cin >> bal;
+                cout << "Enter Bank Account Type(savings/current) : ";
+                cin >> type;
 
-                accounts[count] = new SavingAccount(name, addr, phone, aadhar, bal, extra);
-                accounts[count]->display();
-                count++;
+                if (type == "savings")
+                {
+
+                    cout << "Enter Interest Rate : ";
+                    cin >> extra;
+
+                    accounts[count] = new SavingAccount(name, addr, phone, aadhar, bal, extra);
+                    accounts[count]->display();
+                    count++;
+                }
+                else if (type == "current")
+                {
+
+                    cout << "Enter overDraft Limit : ";
+                    cin >> extra;
+                    accounts[count] = new CurrentAccount(name, addr, phone, aadhar, bal, extra);
+                    accounts[count]->display();
+                    count++;
+                }
+                else
+                {
+                    cout << "please Enter Valid Account type" << endl;
+                }
+                break;
             }
-            else if (type == "current")
-            {
 
-                cout << "Enter overDraft Limit : ";
-                cin >> extra;
-                accounts[count] = new CurrentAccount(name, addr, phone, aadhar, bal, extra);
-                accounts[count]->display();
-                count++;
-            }
-            else
-            {
-                cout << "please Enter Valid Account type" << endl;
+            case 2:{
+
+                if(count == 0){
+                    cout<<"No account created yet"<<endl;
+                }
+               else{
+                int searchAccnumber;
+                bool found = false;
+
+                cout<<"Enter account number to display Account Details : ";
+                cin>>searchAccnumber;
+
+                for(int i = 0; i < count; i++){
+                    if(accounts[i]->getAccNumber() == searchAccnumber){
+                        accounts[i]->display();
+                        found = true;
+                        break;
+                    }
+                }
+                if(found == false){
+                    cout<<" Account not found ! Enter valid Account Number"<<endl;
+                }
+               }
+               break;
             }
         }
 
