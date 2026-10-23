@@ -30,7 +30,7 @@ public:
     {
 
         cout << "-----Account details----" << endl;
-        cout<<"=========================="<<endl;
+        cout << "==========================" << endl;
         cout << "Holder name : " << holdername << endl;
         cout << "Account number : " << accountnumber << endl;
         cout << "Address : " << address << endl;
@@ -45,15 +45,38 @@ public:
 
     void deposit(int amount)
     {
-        if(amount > 0 && amount < 200000){
+        if (amount > 0 && amount < 200000)
+        {
             balance += amount;
         }
-        else{
-            cout<<"Enter Valid Amount range(0 - 200000)"<<endl;
+        else
+        {
+            cout << "Enter Valid Amount range(0 - 200000)" << endl;
         }
     }
 
-    int getBalance(){
+    void withDraw(int amount)
+    {
+        if (amount <= 0 || amount >= 200000)
+        {
+            cout << "Enter valid amount range (1-200000)" << endl;
+        }
+        else if (amount > balance)
+        {
+            cout << "Insufficient Balance! You only have Rs. " << balance << endl;
+        }
+        else if ((balance - amount) < 1000)
+        {
+            cout << "Minimum balance of Rs. 1000 must be maintained!" << endl;
+        }
+        else
+        {
+            balance = balance - amount;
+            cout << "Rs " << amount << " Withdrawn Successfully!" << endl;
+        }
+    }
+    int getBalance()
+    {
         return balance;
     }
 };
@@ -156,7 +179,7 @@ int main()
                 accounts[count] = new SavingAccount(name, addr, phone, aadhar, bal, extra);
                 accounts[count]->display();
                 cout << "Savings Account create Successfully " << endl;
-                cout<<"================"<<endl;
+                cout << "================" << endl;
 
                 count++;
             }
@@ -168,7 +191,7 @@ int main()
                 accounts[count] = new CurrentAccount(name, addr, phone, aadhar, bal, extra);
                 accounts[count]->display();
                 cout << "Current Account create Successfully " << endl;
-                cout<<"================";
+                cout << "================"<<endl;
                 count++;
             }
             else
@@ -221,8 +244,8 @@ int main()
             else
             {
                 cout << "====== Enter details ======" << endl;
-                cout<<endl;
-                int searchAccNo,amount;
+                cout << endl;
+                int searchAccNo, amount;
                 bool found = false;
 
                 cout << "Enter Account number : ";
@@ -232,19 +255,58 @@ int main()
                     if (accounts[i]->getAccNumber() == searchAccNo)
                     {
                         found = true;
-                        cout<<"Enter Amount : ";
-                        cin>>amount;
-                        cout<<endl;
+                        cout << "Enter Amount : ";
+                        cin >> amount;
+                        cout << endl;
 
                         accounts[i]->deposit(amount);
-                        cout<<"Rs "<<amount<<" Diposited SuccessFully"<<endl;
-                        cout<<"Your cuurent Balance is : "<<accounts[i]->getBalance() << endl;
-                        cout<<"-----------------------------"<<endl;
-
+                        cout << "Rs " << amount << " Diposited SuccessFully" << endl;
+                        cout << "Your cuurent Balance is : " << accounts[i]->getBalance() << endl;
+                        cout << "-----------------------------" << endl;
                     }
                 }
+                if (found == false)
+                {
+                    cout << "Enter valid Account number for Amount deposit" << endl;
+                }
+            }
+            break;
+        }
+
+        case 4:
+        {
+            if (count == 0)
+            {
+                cout << "No account created yet" << endl;
+            }
+            else
+            {
+                cout << "===== Enter details ======" << endl;
+                cout << endl;
+
+                int SearchAcc, amount;
+                bool found = false;
+
+                cout << "Enter Account Number : ";
+                cin >> SearchAcc;
+
+                for (int i = 0; i < count; i++)
+                {
+                    if (accounts[i]->getAccNumber() == SearchAcc)
+                    {
+                        found = true;
+
+                        cout << "Enter amout For Withdraw : ";
+                        cin >> amount;
+
+                        accounts[i]->withDraw(amount);
+                        cout << "Your cuurent Balance is : " << accounts[i]->getBalance()<<endl;
+                        cout << "-----------------------------" << endl;
+                    }
+                }
+
                 if(found == false){
-                    cout<<"Enter valid Account number for Amount deposit"<<endl;
+                    cout<<"Account not Fount !"<<endl;
                 }
             }
             break;
