@@ -48,7 +48,7 @@ OOP basic to advanced
        ↓
 24. Diamond Problem
        ↓
-25. Virtual Inheritance
+25. Virtual Inheritance 
        ↓
 26. SOLID Principles
        ↓
