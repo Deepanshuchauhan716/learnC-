@@ -141,6 +141,7 @@ int main()
         cout << "2.DISPLAY ACCOUNT DETAILS" << endl;
         cout << "3.DEPOSIT MONEY" << endl;
         cout << "4.WITHDRAW MONEY" << endl;
+        cout << "5.DISPLAY ALL ACCOUNT" << endl;
         cout << "====================" << endl;
 
         cout << "Enter your choice : ";
@@ -191,7 +192,7 @@ int main()
                 accounts[count] = new CurrentAccount(name, addr, phone, aadhar, bal, extra);
                 accounts[count]->display();
                 cout << "Current Account create Successfully " << endl;
-                cout << "================"<<endl;
+                cout << "================" << endl;
                 count++;
             }
             else
@@ -300,14 +301,46 @@ int main()
                         cin >> amount;
 
                         accounts[i]->withDraw(amount);
-                        cout << "Your cuurent Balance is : " << accounts[i]->getBalance()<<endl;
+                        cout << "Your cuurent Balance is : " << accounts[i]->getBalance() << endl;
                         cout << "-----------------------------" << endl;
                     }
                 }
 
-                if(found == false){
-                    cout<<"Account not Fount !"<<endl;
+                if (found == false)
+                {
+                    cout << "Account not Fount !" << endl;
                 }
+            }
+            break;
+        }
+
+        case 5:
+        {
+            if(count == 0){
+                cout<<"No account created yet"<<endl;
+            }
+            else{
+                string SuperKey = "admin1234";
+                string EnteredKey;
+
+                cout<<"Enter Super Key : ";
+                cin>>EnteredKey;
+
+                if(SuperKey == EnteredKey){
+
+                    cout << "Manager Login SuccessFully"<<endl;
+                    cout<<endl;
+
+                    cout<<"==== All Account ===="<<endl;
+
+                    for(int i = 0; i < count; i++){
+                        accounts[i]->display();
+                        cout<<endl;
+                    }
+                }else{
+                    cout << "Access Denied! Incorrect Secret Key." << endl;
+                }
+
             }
             break;
         }
