@@ -1,0 +1,44 @@
+🎯 STL Kya Hai? (Full Form: Standard Template Library)
+STL C++ ka ek "Ready-Made Toolbox" (auzaar ka dabba) hai.
+
+Socho tumhe ek naya ghar (project) banana hai:
+
+Bina STL ke (Purana Tarika): Tumhe khud eent (brick), cement, aur lakdi se darwaze aur khidkiyan banani padengi. (Jaise humne Bank project mein array, swap logic khud likha tha).
+
+STL ke Saath (Naya Tarika): Ek dukaan jaao jahan ready-made darwaze, khidkiyan, aur furniture mil rahe hain. Tumhe bas unhe utha kar ghar mein lagana hai. Time bachega aur kaam professional hoga.
+
+STL C++ ke andar pehle se hi bana hua hota hai. Tumhe iske liye alag se kuch install nahi karna padta, bas #include karna padta hai.
+
+🎯 STL Mein Kya-Kya Hota Hai? (4 Hissa)
+STL ke andar 4 tarah ke auzaar (tools) hote hain:
+
+1. Containers (Data Store Karne Ke Dabbe)
+Ye wo dabbe hain jahan tum data (numbers, naam, objects) rakh sakte ho.
+
+Jaise: vector (dynamic array), map (dictionary), stack, queue.
+
+Fayda: Inki size fix nahi hoti, ye apne aap badhte hain.
+
+2. Algorithms (Ready-Made Functions)
+Ye functions kisi bhi container (dabbe) ke data par kaam karte hain.
+
+Jaise: sort() (chhote se bade karna), reverse() (ulta karna), max() (sabse bada nikalna).
+
+Fayda: Tumhe loop likh kar sorting ka logic nahi banana padega.
+
+3. Iterators (Dabbe Mein Ghoomne Ka Tarika)
+Ye wo "pointer" hote hain jo tumhe container ke ek element se doosre element tak le jaate hain.
+
+Jaise: v.begin(), v.end().
+
+Fayda: Ye batate hain ki data kahan se shuru hota hai aur kahan khatam.
+
+4. Functors
+Ye functions ko objects ki tarah use karne ka tarika hai.
+
+🎯 STL Ka Sabse Bada Fayda Kya Hai? (Interview Mein Kyun Poochte Hain?)
+Time Bachta Hai: Tumhe data structures (jaise linked list, tree) khud zero se nahi banane padte. STL pehle se optimized hote hain.
+
+Less Code: 20 line ka kaam 1 line mein ho jata hai.
+
+No Bugs: Kyunki STL already tested hota hai, isme bugs nahi aate.
