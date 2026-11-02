@@ -18,13 +18,13 @@ OOP basic to advanced
        ↓
 9. Polymorphism // ✅
        ↓
-10. Function Overloading
+10. Function Overloading✅
        ↓
 11. Operator Overloading
        ↓
-12. Function Overriding
+12. Function Overriding✅
        ↓
-13. Virtual Function
+13. Virtual Function 
        ↓
 14. Runtime Polymorphism
        ↓
@@ -48,7 +48,7 @@ OOP basic to advanced
        ↓
 24. Diamond Problem
        ↓
-25. Virtual Inheritance 
+25. Virtual Inheritance
        ↓
 26. SOLID Principles
        ↓
