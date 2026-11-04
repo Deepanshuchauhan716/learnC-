@@ -16,6 +16,7 @@
 // like
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -41,7 +42,7 @@ int main() {
 
     // index is start from 0
 
-    int arr1[10] = {1,2,3,4,5};
+    int arr1[10] = {1,2,3,4,5};// Bas! Ek hi line mein kaam ho gaya
     // index of 1 = 0
     // index of 2 = 1
     // index of 3 = 2
@@ -54,6 +55,24 @@ int main() {
 
     // array is store in continous memory
 
-    // Bas! Ek hi line mein kaam ho gaya.
+
+    // 1d array
+
+    int arr[3] = {10,20,30}; //static array
+    vector<int> v1; // dynamic 1d array
+
+    // 2d array
+
+    int arr[3][3] = { // static 2d array
+        {1,2,3},
+        {4,5,5}
+    };
+
+
+    vector<vector<int>> matrix = { // dynamic array
+        {1,2,3},
+        {4,5,6}
+    };
+
     return 0;
 }
