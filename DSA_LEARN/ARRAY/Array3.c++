@@ -82,6 +82,24 @@ int main()
             cout << i;
         }
     }
+    cout << endl;
+
+    // updating
+
+    int array[] = {12,34,56,78,90};
+    int num4 = sizeof(array) / sizeof(array[0]);
+    int index4,value4;
+    cout << "Enter index : ";
+    cin >> index4;
+    cout << "Enter value : ";
+    cin >> value4;
+
+    array[index4] = value4;
+    for (int i = 0; i < num4; i++)
+    {
+        cout << array[i] << " "<<endl;
+    }
+
 
     return 0;
 }
